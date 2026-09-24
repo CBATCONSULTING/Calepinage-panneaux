@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#172554">
+  <title>Calepinage des panneaux - Challenge Bat</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://static.wixstatic.com/media/9c09bd_f289e680cd854593bac8c026d220825a.png?v=133">
+  <link rel="shortcut icon" type="image/png" href="https://static.wixstatic.com/media/9c09bd_f289e680cd854593bac8c026d220825a.png?v=133">
+  <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/9c09bd_f289e680cd854593bac8c026d220825a.png?v=133">
+  <style>
+    :root{--navy:#172554;--blue:#2563eb;--sky:#eff6ff;--ink:#0f172a;--muted:#64748b;--line:#dbe3ee;--paper:#fff;--bg:#f3f6fa;--orange:#f59e0b;--red:#dc2626;--green:#15803d;--shadow:0 14px 38px rgba(15,23,42,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
+    button,input,select{font:inherit}.hidden{display:none!important}
+    .auth-gate{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:20px;background:linear-gradient(135deg,#e8eef8,#f8fafc)}
+    .auth-card{width:min(440px,100%);padding:28px;background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:0 24px 70px rgba(15,23,42,.18)}
+    .brand{display:flex;align-items:center;gap:12px}.brand-mark{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,#2563eb,#172554);color:#fff;font-weight:900}.brand-title{font-weight:900}.brand-sub{font-size:12px;color:var(--muted)}
+    .auth-card h1{font-size:26px;margin:22px 0 6px}.auth-card p{color:var(--muted);margin:0 0 18px}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:13px;font-weight:800}.field input,.field select{width:100%;padding:12px 13px;border:1px solid #cbd5e1;border-radius:11px;background:#fff}.field input:focus,.field select:focus{outline:3px solid #bfdbfe;border-color:var(--blue)}
+    .primary,.secondary,.danger-btn{border:0;border-radius:11px;padding:11px 15px;font-weight:850;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#e2e8f0;color:var(--ink)}.danger-btn{background:#fee2e2;color:#991b1b}.wide{width:100%}.auth-msg{min-height:21px;margin-top:10px;font-size:13px;font-weight:750;color:#b45309}.auth-msg.err{color:#b91c1c}
+    header{position:sticky;top:0;z-index:50;background:rgba(23,37,84,.97);color:#fff;box-shadow:0 8px 24px rgba(15,23,42,.15)}.topbar{max-width:1240px;margin:auto;min-height:72px;padding:11px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}.topbar .brand-sub{color:#cbd5e1}.header-actions{display:flex;align-items:center;gap:9px}.version,.user-pill{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.12);font-size:12px;font-weight:800}.logout{border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;border-radius:9px;padding:7px 10px;cursor:pointer}
+    .layout{max-width:1240px;margin:auto;display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;padding:24px 20px 60px}.sidebar{position:sticky;top:96px;align-self:start}.search{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:11px;background:#fff}.nav{margin-top:10px;padding:9px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.nav a{display:block;padding:8px 10px;border-radius:9px;color:#334155;text-decoration:none;font-size:14px;font-weight:700}.nav a:hover{background:var(--sky);color:#1d4ed8}
+    main{min-width:0}.hero{padding:32px;border-radius:24px;background:linear-gradient(135deg,#172554,#1d4ed8);color:#fff;box-shadow:var(--shadow)}.eyebrow{text-transform:uppercase;letter-spacing:.11em;font-size:12px;font-weight:900;color:#bfdbfe}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.06;margin:9px 0 14px}.hero p{max-width:760px;margin:0;color:#dbeafe;font-size:17px}.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.quick div{padding:13px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);border-radius:13px;font-size:13px}.quick strong{display:block;font-size:20px}
+    .notice{display:flex;gap:14px;margin:20px 0;padding:18px;border-radius:16px;background:#fff7ed;border:1px solid #fed7aa}.notice-icon{font-size:25px}.notice strong{color:#9a3412}.notice p{margin:3px 0 0;color:#7c2d12}
+    section{scroll-margin-top:95px;margin:20px 0;padding:24px;background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:0 7px 22px rgba(15,23,42,.055)}section h2{display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:23px;color:var(--navy)}section h3{margin:22px 0 9px;font-size:17px}section p{margin:8px 0}.lead{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.card{padding:16px;border:1px solid var(--line);border-radius:14px;background:#fbfdff}.card h3{margin:0 0 8px}.card ul,.steps{margin:8px 0;padding-left:22px}.card li,.steps li{margin:6px 0}.tag{display:inline-block;margin:3px 3px 3px 0;padding:3px 8px;border-radius:999px;background:#e0e7ff;color:#3730a3;font-size:12px;font-weight:800}
+    .callout{margin:14px 0;padding:15px 17px;border-left:5px solid var(--blue);border-radius:10px;background:var(--sky)}.callout.warning{border-color:var(--orange);background:#fffbeb}.callout.danger{border-color:var(--red);background:#fef2f2}.callout.success{border-color:var(--green);background:#f0fdf4}.callout strong{display:block;margin-bottom:3px}
+    .checklist{display:grid;gap:8px}.check{display:flex;gap:10px;align-items:flex-start;padding:10px 11px;border:1px solid var(--line);border-radius:10px;background:#fff}.check input{margin-top:5px;transform:scale(1.15)}
+    details{border:1px solid var(--line);border-radius:12px;margin:9px 0;background:#fff}summary{cursor:pointer;padding:13px 15px;font-weight:850;color:#1e3a8a}.detail-body{padding:0 15px 15px}
+    .finish-setup{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:12px 18px;align-items:end;margin:14px 0;padding:16px;border:1px solid #bfdbfe;border-radius:14px;background:#eff6ff}.finish-setup .field{margin:0;min-width:0}.finish-setup select{width:100%}.finish-toggle{display:flex;grid-column:1/-1;grid-row:1;gap:8px;align-items:center;padding:4px;font-weight:800}.finish-panel{margin-top:16px;padding:16px;border:2px solid #dbeafe;border-radius:16px}.finish-panel h3{margin:0 0 12px;color:#1e3a8a}.calc-table{display:grid;gap:9px}.calc-row{display:grid;grid-template-columns:190px 1fr;gap:12px;padding:13px;border:1px solid var(--line);border-radius:13px;background:#fbfdff}.calc-label{font-weight:850;color:#1e3a8a}.format-options{display:flex;flex-wrap:wrap;gap:8px}.format-choice{display:flex;align-items:center;gap:7px;padding:7px 9px;border:1px solid #cbd5e1;border-radius:10px;background:#fff}.format-choice:has(input[type=checkbox]:checked){border-color:#60a5fa;background:#eff6ff}.format-choice input[type=checkbox]{width:18px;height:18px}.qty{width:58px;padding:5px 7px;border:1px solid #cbd5e1;border-radius:8px;text-align:center}.developed{width:92px}.qty:disabled{opacity:.4}.length-fields{display:grid;grid-template-columns:repeat(2,minmax(130px,1fr));gap:9px}.length-fields .field{margin:0}.calc-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}.result{margin-top:16px;padding:16px;border-radius:14px;background:#ecfdf5;border:1px solid #bbf7d0}.result h4{margin:12px 0 5px;color:#166534}.result ul{margin:5px 0;padding-left:22px}.result .total{font-size:22px;color:#166534;font-weight:900}.finish-result{padding:12px 0;border-top:1px solid #bbf7d0}.finish-result:first-of-type{border-top:0}.small{font-size:12px;color:var(--muted)}
+    .footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 34px}.no-results{padding:30px;text-align:center;color:var(--muted)}
+    @media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:static}.nav{display:flex;overflow-x:auto;gap:4px}.nav a{white-space:nowrap}.quick{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.user-pill{display:none}}
+    @media(max-width:700px){.finish-setup{grid-template-columns:1fr}.finish-toggle{grid-column:auto;grid-row:auto;padding:2px 0}}@media(max-width:560px){.topbar{padding:9px 13px}.topbar .brand-sub{display:none}.brand-mark{width:40px;height:40px}.layout{padding:14px 12px 45px;gap:14px}.hero,section{padding:19px;border-radius:17px}.hero h1{font-size:32px}.notice{padding:14px}.calc-row{grid-template-columns:1fr}.length-fields{grid-template-columns:1fr}.format-options{display:grid}.format-choice{justify-content:space-between}.version{display:none}}
+    .calepinage-mode .sidebar,.calepinage-mode main>:not(#calpinage){display:none!important}.calepinage-mode .layout{display:block;max-width:1240px}.calepinage-mode main{width:100%}.calepinage-mode #calpinage{display:block}
+    @media print{.auth-gate,header,.sidebar,.calc-actions{display:none!important}.layout{display:block;padding:0}.hero{background:#fff;color:#000;box-shadow:none;border:1px solid #ddd}.hero p,.eyebrow{color:#333}section{break-inside:avoid;box-shadow:none}.quick div{border-color:#ccc;background:#fff}.footer{padding:10px}}
+  </style>
+  <link rel="icon" href="./favicon.ico?v=132" sizes="any">
+  <link rel="shortcut icon" href="./favicon.ico?v=132" type="image/x-icon">
+</head>
+<body class="calepinage-mode">
+  <div id="authGate" class="auth-gate">
+    <form id="loginForm" class="auth-card">
+      <div class="brand"><div class="brand-mark">CB</div><div><div class="brand-title">Challenge Bat</div><div class="brand-sub">Accès professionnel sécurisé</div></div></div>
+      <h1>Calepinage des panneaux</h1>
+      <p>Connectez-vous avec votre adresse professionnelle Challenge Bat.</p>
+      <div class="field"><label for="email">Adresse e-mail</label><input id="email" type="email" autocomplete="username" placeholder="prenom@challengebat.fr" required></div>
+      <div class="field"><label for="password">Mot de passe</label><input id="password" type="password" autocomplete="current-password" required></div>
+      <button class="primary wide" type="submit">Se connecter</button>
+      <div id="authMessage" class="auth-msg" aria-live="polite"></div>
+    </form>
+  </div>
+
+  <div id="app" class="hidden">
+    <header><div class="topbar">
+      <div class="brand"><div class="brand-mark">CB</div><div><div class="brand-title">Calepinage des panneaux</div><div class="brand-sub">Challenge Bat</div></div></div>
+      <div class="header-actions"><span class="version">V1.0.0</span><span id="userEmail" class="user-pill"></span><button id="logoutBtn" class="logout">Déconnexion</button></div>
+    </div></header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <input id="search" class="search" type="search" placeholder="Rechercher dans le guide…" aria-label="Rechercher dans le guide">
+        <nav class="nav" aria-label="Sommaire">
+          <a href="#essentiels">Les essentiels</a><a href="#avant">Avant le rendez-vous</a><a href="#chantier">Sur le chantier</a><a href="#conception">Conception</a><a href="#travaux">Travaux</a><a href="#calpinage">Calpinage</a><a href="#plan">Plan PDF et NKP</a><a href="#envoi">Envoi du projet</a><a href="#organisation">Organisation</a>
+        </nav>
+      </aside>
+
+      <main>
+        <div class="hero searchable">
+          <div class="eyebrow">Référentiel métier évolutif</div><h1>Le guide pratique du PVMAN</h1>
+          <p>Les bons réflexes pour préparer la pré-visite, sécuriser le projet cuisine, chiffrer les travaux et transmettre un dossier exploitable par tous.</p>
+          <div class="quick"><div><strong>1</strong>Tout vérifier sur place</div><div><strong>2</strong>Tout annoter clairement</div><div><strong>3</strong>Tout transmettre sans ambiguïté</div></div>
+        </div>
+
+        <div class="notice searchable"><div class="notice-icon">💡</div><div><strong>Modification de projet à distance</strong><p>Si la demande du client ne nécessite pas de nouveau déplacement, envoyer au service pré-visite une demande de règlement de <b>69 € TTC</b> pour modification du projet à distance. Cela évite un retour inutile chez le client et un temps de déplacement non négligeable.</p></div></div>
+
+        <section id="essentiels" class="searchable"><h2>🎯 Les essentiels</h2><p class="lead">Trois règles à appliquer sur chaque dossier.</p>
+          <div class="cards">
+            <div class="card"><h3>Point de départ de la pose</h3><p>Indiquer clairement sur le plan <b>par où commence la pose</b>, avec une flèche et la mention « DÉPART DE POSE ».</p></div>
+            <div class="card"><h3>Responsable des travaux</h3><p>Préciser sans ambiguïté qui réalise chaque intervention électrique et plomberie : client, Challenge Bat ou autre intervenant.</p></div>
+            <div class="card"><h3>Électricité non conforme</h3><p>Informer le client que les appareils électroménagers ne seront pas installés si l'installation électrique nécessaire n'est pas mise en conformité.</p></div>
+            <div class="card"><h3>Dossier lisible</h3><p>Les photos, annotations, mesures et choix client doivent permettre à une autre personne de comprendre le chantier sans appeler le PVMAN.</p></div>
+          </div>
+        </section>
+
+        <section id="avant" class="searchable"><h2>🧰 Avant le rendez-vous</h2>
+          <div class="cards"><div class="card"><h3>Matériel</h3><div class="checklist"><label class="check"><input type="checkbox">Mètre à ruban</label><label class="check"><input type="checkbox">Mètre laser</label><label class="check"><input type="checkbox">Rapporteur d'angles</label><label class="check"><input type="checkbox">Mesureur de terre</label><label class="check"><input type="checkbox">PC portable chargé</label></div></div>
+          <div class="card"><h3>Accès et logiciels</h3><div><span class="tag">Boîte mail</span><span class="tag">Accès Google à distance</span><span class="tag">Extrabat</span><span class="tag">Compte IKEA</span><span class="tag">Foxit</span><span class="tag">Générateur de devis IKEA</span><span class="tag">Intranet Challenge</span><span class="tag">Checklist</span><span class="tag">Pointage</span></div><p class="small">Vérifier également les favoris, les modèles de devis travaux/IKEA, le niveau de difficulté et le code « raison projet ».</p></div></div>
+          <h3>Formation</h3><ul class="steps"><li>Visionner les vidéos explicatives mises à disposition.</li><li>Lire les conditions de vente et les compléments d'information applicables.</li><li>Maintenir le PC et les outils à jour.</li></ul>
+        </section>
+
+        <section id="chantier" class="searchable"><h2>📷 Sur le chantier</h2>
+          <details open><summary>Photos indispensables</summary><div class="detail-body"><ul><li>Respecter la notice « méthode et envoi des photos ».</li><li>Prendre plusieurs vues générales de la pièce.</li><li>Photographier les contraintes, réseaux, murs, angles et accès.</li><li>Ne jamais oublier la mesure et la photo liées à la terre.</li></ul></div></details>
+          <details><summary>Contrôle de la terre</summary><div class="detail-body"><p>Mesurer la terre, consigner le résultat et expliquer au client pourquoi ce contrôle est indispensable à la sécurité et à la faisabilité de l'installation.</p></div></details>
+          <div class="callout success"><strong>Objectif</strong>Les informations collectées doivent suffire pour concevoir, chiffrer et préparer la pose sans zone d'ombre.</div>
+        </section>
+
+        <section id="conception" class="searchable"><h2>📐 Conception de la cuisine</h2>
+          <h3>Cuisines en L ou en U</h3><ol class="steps"><li>Demander si le client souhaite un assemblage usine avec jonction imperceptible.</li><li>Si oui : prévoir une pose à 90° et des plans de travail sur mesure.</li><li>Pour une cuisine en U : anticiper une pose en deux temps, avec pose provisoire puis retour.</li><li>Si non : suivre les murs et prévoir les baguettes de jonction adaptées.</li></ol>
+          <div class="cards"><div class="card"><h3>Plans de travail</h3><ul><li>Déterminer s'ils sont standards ou sur mesure.</li><li>En cas de contrainte contre le mur : contrôler le vide sanitaire et envisager un plan plus profond/sur mesure.</li><li>Ne jamais recouper un plan standard sur toute sa longueur pour réaliser un plan bar.</li></ul></div><div class="card"><h3>Électroménager et meubles</h3><ul><li>Éviter un lave-linge contre un mur : risque de fixation ou d'ouverture de porte.</li><li>Placer un lave-linge intégré entre deux meubles.</li><li>Contrôler la hauteur disponible pour un meuble hotte intégré proche du plafond.</li></ul></div></div>
+        </section>
+
+        <section id="travaux" class="searchable"><h2>🔧 Travaux à identifier et chiffrer</h2>
+          <div class="callout danger"><strong>Travaux bloquants</strong>Ils doivent être identifiés, expliqués au client, attribués à un responsable et réalisés avant la pose lorsqu'ils conditionnent l'installation.</div>
+          <h3>Travaux classiques à contrôler</h3><div class="checklist"><label class="check"><input type="checkbox">Dépose et enlèvement de l'existant</label><label class="check"><input type="checkbox">Regroupement ou modification plomberie</label><label class="check"><input type="checkbox">Modification du fond d'un meuble de cuisine</label><label class="check"><input type="checkbox">Découpes du plan de travail</label><label class="check"><input type="checkbox">Rallonges pour machine à laver</label></div>
+          <div class="callout warning"><strong>Travaux non bloquants</strong>Établir un devis séparé afin de distinguer clairement les prestations complémentaires du périmètre nécessaire à la pose.</div>
+        </section>
+
+        <section id="calpinage" class="searchable"><h2>🪚 Calpinage des panneaux de finition</h2><p class="lead">Cochez les éléments nécessaires et indiquez leur quantité ou leur longueur totale. Le calculateur choisit les panneaux, organise les découpes et réemploie automatiquement les chutes produites avant de proposer un panneau supplémentaire.</p>
+          <div id="catalogAlert" class="callout warning hidden" role="alert"><strong id="catalogAlertTitle">⚠️ Catalogue IKEA à vérifier</strong><span id="catalogAlertText"></span></div>
+          <div class="callout danger"><strong>⚠️ Important — Fileurs</strong>Les calculs sont prévus pour des fileurs de largeur maximale 18 cm. Les chants visibles, le sens du décor et les contraintes particulières restent à contrôler avant commande.</div>
+          <div class="finish-setup"><div class="field"><label for="finishA">Finition principale</label><select id="finishA"><option value="">Choisir une finition IKEA…</option></select></div><label class="finish-toggle"><input id="useSecondFinish" type="checkbox"> Le projet comporte une deuxième finition</label><div id="finishBField" class="field hidden"><label for="finishB">Deuxième finition</label><select id="finishB"><option value="">Choisir la deuxième finition…</option></select></div></div>
+          <div id="finishAInputs" class="finish-panel"><h3>Besoins — finition principale</h3><div id="calcTableA" class="calc-table">
+            <div class="calc-row"><div class="calc-label">Fileurs bas</div><div class="format-options"><label class="format-choice"><input type="checkbox" data-toggle="fb80">80 cm <input id="fb80" class="qty" type="number" min="0" value="0" disabled aria-label="Quantité fileurs bas 80"></label><label class="format-choice"><input type="checkbox" data-toggle="fb88">88 cm <input id="fb88" class="qty" type="number" min="0" value="0" disabled aria-label="Quantité fileurs bas 88"></label></div></div>
+            <div class="calc-row"><div class="calc-label">Fileurs hauts</div><div class="format-options"><label class="format-choice"><input type="checkbox" data-toggle="fh40">40 cm <input id="fh40" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="fh60">60 cm <input id="fh60" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="fh80">80 cm <input id="fh80" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="fh100">100 cm <input id="fh100" class="qty" type="number" min="0" value="0" disabled></label></div></div>
+            <div class="calc-row"><div class="calc-label">Fileurs colonne</div><div class="format-options"><label class="format-choice"><input type="checkbox" data-toggle="fc220">220 cm <input id="fc220" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="fc228">228 cm <input id="fc228" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="fc240">240 cm <input id="fc240" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="fc248">248 cm <input id="fc248" class="qty" type="number" min="0" value="0" disabled></label></div></div>
+            <div class="calc-row"><div class="calc-label">Habillages latéraux</div><div class="format-options"><label class="format-choice"><input type="checkbox" data-toggle="hl3986">39 × 86 <input id="hl3986" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="hl39106">39 × 106 <input id="hl39106" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="hl80">62 × 80 <input id="hl80" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="hl220">62 × 220 <input id="hl220" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="hl240">62 × 240 <input id="hl240" class="qty" type="number" min="0" value="0" disabled></label></div></div>
+            <div class="calc-row"><div class="calc-label">Jambages</div><div class="format-options"><label class="format-choice"><input type="checkbox" data-toggle="j88">62 × 88 <input id="j88" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="j228">62 × 228 <input id="j228" class="qty" type="number" min="0" value="0" disabled></label><label class="format-choice"><input type="checkbox" data-toggle="j248">62 × 248 <input id="j248" class="qty" type="number" min="0" value="0" disabled></label></div></div>
+            <div class="calc-row"><div class="calc-label">Habillage arrière meubles bas</div><div class="format-options"><label class="format-choice"><input type="checkbox" data-toggle="rearBase80">Hauteur 80 cm <input id="rearBase80" class="qty developed" type="number" min="0" step="0.1" value="0" disabled aria-label="Longueur totale habillage arrière meubles bas hauteur 80"><span class="small">cm à habiller</span></label><label class="format-choice"><input type="checkbox" data-toggle="rearBase88">Hauteur 88 cm <input id="rearBase88" class="qty developed" type="number" min="0" step="0.1" value="0" disabled aria-label="Longueur totale habillage arrière meubles bas hauteur 88"><span class="small">cm à habiller</span></label></div></div>
+            <div class="calc-row"><div class="calc-label">Habillage avant meubles bas</div><div class="format-options"><label class="format-choice"><input type="checkbox" data-toggle="frontBase80">Hauteur 80 cm <input id="frontBase80" class="qty developed" type="number" min="0" step="0.1" value="0" disabled aria-label="Longueur totale habillage avant meubles bas hauteur 80"><span class="small">cm à habiller</span></label><label class="format-choice"><input type="checkbox" data-toggle="frontBase88">Hauteur 88 cm <input id="frontBase88" class="qty developed" type="number" min="0" step="0.1" value="0" disabled aria-label="Longueur totale habillage avant meubles bas hauteur 88"><span class="small">cm à habiller</span></label></div></div>
+            <div class="calc-row"><div class="calc-label">Habillage arrière colonnes</div><div class="format-options"><label class="format-choice"><input type="checkbox" data-toggle="rearCol220">Hauteur 220 cm <input id="rearCol220" class="qty developed" type="number" min="0" step="0.1" value="0" disabled><span class="small">cm à habiller</span></label><label class="format-choice"><input type="checkbox" data-toggle="rearCol228">Hauteur 228 cm <input id="rearCol228" class="qty developed" type="number" min="0" step="0.1" value="0" disabled><span class="small">cm à habiller</span></label><label class="format-choice"><input type="checkbox" data-toggle="rearCol240">Hauteur 240 cm <input id="rearCol240" class="qty developed" type="number" min="0" step="0.1" value="0" disabled><span class="small">cm à habiller</span></label><label class="format-choice"><input type="checkbox" data-toggle="rearCol248">Hauteur 248 cm <input id="rearCol248" class="qty developed" type="number" min="0" step="0.1" value="0" disabled><span class="small">cm à habiller</span></label></div></div>
+            <div class="calc-row"><div class="calc-label">Habillages horizontaux</div><div class="length-fields"><div class="field"><label for="under39">Sous meubles hauts, profondeur 39 cm — longueur totale (cm)</label><input id="under39" type="number" min="0" value="0"></div><div class="field"><label for="over39">Dessus meubles hauts, profondeur 39 cm — longueur totale (cm)</label><input id="over39" type="number" min="0" value="0"></div><div class="field"><label for="under60">Sous meubles, profondeur 60 cm — longueur totale (cm)</label><input id="under60" type="number" min="0" value="0"></div><div class="field"><label for="over60">Dessus meubles, profondeur 60 cm — longueur totale (cm)</label><input id="over60" type="number" min="0" value="0"></div></div></div>
+          </div></div>
+          <div id="finishBInputs" class="finish-panel hidden"><h3>Besoins — deuxième finition</h3><div id="calcTableB" class="calc-table"></div></div>
+          <div class="calc-actions"><button id="calculate" class="primary" type="button">Calculer les panneaux</button><button id="resetCalc" class="secondary" type="button">Réinitialiser</button><button id="printCalc" class="secondary" type="button">Imprimer</button></div>
+          <div id="calcResult" class="result hidden" aria-live="polite"></div>
+        </section>
+
+        <section id="plan" class="searchable"><h2>🗺️ Plan PDF et notes NKP</h2>
+          <div class="cards"><div class="card"><h3>Notes NKP</h3><ul><li>Ajouter les baguettes de jonction.</li><li>Indiquer le nombre de paquets de pieds.</li><li>Pour les électroménagers : préciser s'ils viennent d'IKEA, s'ils sont déjà sur place et si le client souhaite leur installation.</li><li>Signaler les passages dans les caissons.</li></ul></div><div class="card"><h3>Annotations sur le plan</h3><ul><li>Ajouter le tampon « plan de travail sur mesure ».</li><li>Repérer l'emplacement de l'évier s'il n'est pas IKEA.</li><li>Repérer également la plaque.</li><li>Contrôler les prises au-dessus de la plaque et de l'évier.</li><li><b>Indiquer le départ de pose avec une flèche.</b></li></ul></div></div>
+          <h3>Devis travaux</h3><ul class="steps"><li>Annoter clairement l'électricité : « OK » ou « PAS OK ».</li><li>Vérifier le chiffrage de la pose de la hotte, notamment pour les modèles intégrés.</li><li>Chiffrer les travaux annexes à l'aide du livret PDF.</li></ul>
+        </section>
+
+        <section id="envoi" class="searchable"><h2>✉️ Envoi du projet</h2>
+          <div class="checklist"><label class="check"><input type="checkbox">Vérifier le montant de la pose dans le corps du mail et dans le rapport IKEA.</label><label class="check"><input type="checkbox">Vérifier le calcul des capacités.</label><label class="check"><input type="checkbox">Pour une seconde version, ajouter « V2 » dans le sujet du mail.</label><label class="check"><input type="checkbox">Dans Extrabat, créer un dossier nommé « Archives » à l'intérieur du dossier de pose et y déplacer les anciens PDF afin de conserver la première version du projet.</label><label class="check"><input type="checkbox">Contrôler que l'attestation de TVA est signée avant tout envoi.</label></div>
+          <div class="callout"><strong>Archivage d'un projet V2 dans Extrabat</strong>La version la plus récente doit rester immédiatement visible dans le dossier de pose. Tous les PDF des versions précédentes doivent être rangés dans le sous-dossier « Archives ».</div>
+          <div class="callout danger"><strong>Blocage d'envoi</strong>Ne pas envoyer le projet tant que l'attestation de TVA requise n'est pas signée.</div>
+        </section>
+
+        <section id="organisation" class="searchable"><h2>🗂️ Organisation et suivi</h2>
+          <div class="cards"><div class="card"><h3>Centiro</h3><ul><li>Télécharger les pièces jointes nécessaires.</li><li>Passer le dossier en « completed » lorsque le traitement est réellement terminé.</li></ul></div><div class="card"><h3>Sauvegardes</h3><ul><li>Enregistrer les documents au bon emplacement.</li><li>Vérifier la synchronisation OneDrive.</li></ul></div><div class="card"><h3>Mails</h3><ul><li>Programmer les réponses clients lorsqu'elles sont rédigées après 18 h.</li><li>En cas d'absence, rediriger la boîte mail vers le service technique.</li><li>Ne pas modifier le numéro de téléphone configuré pour la récupération de la boîte mail.</li></ul></div><div class="card"><h3>Maintenance</h3><ul><li>Installer les mises à jour du PC et des logiciels.</li><li>Signaler rapidement tout accès ou outil indisponible.</li></ul></div></div>
+        </section>
+        <div id="noResults" class="no-results hidden">Aucune rubrique ne correspond à cette recherche.</div>
+      </main>
+    </div><div class="footer">Outil de calepinage Challenge Bat · Version 1.0.0 · Catalogue IKEA Cuisine 2026</div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
+  <script>
+    const firebaseConfig={apiKey:"AIzaSyB-hKccNAiciGjUeS6L-Ws3KRzYxMyU3L4",authDomain:"cbat-consulting.firebaseapp.com",projectId:"cbat-consulting",storageBucket:"cbat-consulting.firebasestorage.app",messagingSenderId:"258359623144",appId:"1:258359623144:web:4e5a54a09e5ac9245a785d"};
+    firebase.initializeApp(firebaseConfig);
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
+    const $=id=>document.getElementById(id);
+    function allowed(email){return String(email||"").toLowerCase().endsWith("@challengebat.fr")}
+    firebase.auth().onAuthStateChanged(async user=>{if(user&&!allowed(user.email)){await firebase.auth().signOut();$("authMessage").textContent="Cette application est réservée aux adresses @challengebat.fr.";$("authMessage").className="auth-msg err";return}$("authGate").classList.toggle("hidden",!!user);$("app").classList.toggle("hidden",!user);if(user)$("userEmail").textContent=user.email});
+    $("loginForm").addEventListener("submit",async e=>{e.preventDefault();const msg=$("authMessage");msg.textContent="Connexion…";msg.className="auth-msg";const email=$("email").value.trim();if(!allowed(email)){msg.textContent="Utilisez votre adresse @challengebat.fr.";msg.className="auth-msg err";return}try{await firebase.auth().signInWithEmailAndPassword(email,$("password").value);msg.textContent=""}catch(err){msg.textContent="Connexion impossible. Vérifiez votre adresse et votre mot de passe.";msg.className="auth-msg err"}});
+    $("logoutBtn").addEventListener("click",()=>firebase.auth().signOut());
+
+    const normalize=s=>s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    $("search").addEventListener("input",e=>{const q=normalize(e.target.value.trim());let shown=0;document.querySelectorAll(".searchable").forEach(el=>{const ok=!q||normalize(el.textContent).includes(q);el.classList.toggle("hidden",!ok);if(ok)shown++});$("noResults").classList.toggle("hidden",shown>0)});
+
+    const catalogYear=2026,now=new Date();
+    if(now.getFullYear()>catalogYear){
+      const alert=$("catalogAlert"),late=now.getFullYear()>catalogYear+1||now.getMonth()>=4;
+      alert.classList.remove("hidden");alert.classList.toggle("danger",late);alert.classList.toggle("warning",!late);
+      $("catalogAlertTitle").textContent=late?"🚨 Catalogue IKEA périmé":"⚠️ Nouveau catalogue IKEA à vérifier";
+      $("catalogAlertText").textContent=` Le calculateur utilise encore le catalogue Cuisine ${catalogYear}. Rechercher le catalogue Cuisine ${now.getFullYear()}, puis mettre à jour les finitions, dimensions et références avant de valider les commandes.`;
+    }
+
+    const ikeaCatalog=[
+      ['ASKERSUND','motif frêne clair',[[39,86,'603.318.46'],[39,106,'103.318.44'],[39,240,'803.318.45'],[62,80,'003.318.49'],[62,220,'403.318.47'],[62,240,'203.318.48']]],
+      ['ASPUDDEN','gris',[[39,81,'205.950.28'],[39,101,'605.950.26'],[39,240,'405.950.27'],[62,80,'605.950.31'],[62,220,'005.950.29'],[62,240,'805.950.30']]],
+      ['ASPUDDEN','gris vert foncé',[[39,81,'005.953.50'],[39,101,'405.953.48'],[39,240,'205.953.49'],[62,80,'405.953.53'],[62,240,'605.953.52']]],
+      ['AXSTAD','gris vert',[[39,86,'405.639.22'],[39,106,'805.639.20'],[39,240,'605.639.21'],[62,80,'705.639.25'],[62,220,'205.639.23'],[62,240,'005.639.24']]],
+      ['BODBYN','noir',[[39,86,'605.685.70'],[39,106,'005.685.68'],[39,240,'805.685.69'],[62,80,'005.685.73'],[62,220,'405.685.71'],[62,240,'205.685.72']]],
+      ['ENKÖPING','blanc',[[39,83,'205.057.54'],[39,103,'605.057.52'],[39,240,'405.057.53'],[62,80,'505.057.57'],[62,220,'905.057.55'],[62,240,'705.057.56']]],
+      ['FORSBACKA','chêne',[[39,85,'705.652.22'],[39,105,'105.652.20'],[39,240,'905.652.21'],[62,80,'305.652.24'],[62,220,'005.653.29'],[62,240,'505.652.23']]],
+      ['FRÖJERED','bambou clair',[[39,80,'104.416.25'],[62,80,'904.416.31']]],
+      ['FÖRBÄTTRA','blanc',[[39,86,'102.978.83'],[39,106,'502.978.81'],[39,240,'302.978.82'],[62,80,'402.978.86'],[62,220,'902.978.84'],[62,240,'602.978.85']]],
+      ['FÖRBÄTTRA','blanc brillant',[[39,86,'005.678.42'],[39,106,'805.678.38'],[39,240,'405.678.40'],[62,80,'505.678.54'],[62,220,'705.678.48'],[62,240,'905.678.52']]],
+      ['FÖRBÄTTRA','blanc cassé',[[39,86,'402.344.36'],[39,106,'302.057.26'],[39,240,'102.057.27'],[62,80,'902.057.28'],[62,220,'402.344.60'],[62,240,'502.057.25']]],
+      ['FÖRBÄTTRA','blanc mat',[[39,81,'206.488.71'],[39,86,'305.678.45'],[39,101,'006.488.72'],[39,106,'605.678.39'],[39,240,'205.678.41'],[62,80,'005.678.56'],[62,220,'305.678.50'],[62,240,'705.678.53']]],
+      ['FÖRBÄTTRA','brun motif noyer',[[39,83,'805.584.76'],[39,103,'505.584.73'],[39,240,'005.584.75'],[62,80,'205.584.79'],[62,220,'605.584.77'],[62,240,'405.584.78']]],
+      ['FÖRBÄTTRA','gris foncé',[[39,86,'304.540.80'],[39,106,'704.540.78'],[39,240,'504.540.79'],[62,80,'704.540.83'],[62,220,'104.540.81'],[62,240,'904.540.82']]],
+      ['FÖRBÄTTRA','mat anthracite',[[39,83,'205.267.37'],[39,103,'605.267.35'],[39,240,'405.267.36'],[62,80,'205.267.42'],[62,220,'005.267.38'],[62,240,'805.267.39']]],
+      ['HAVSTORP','brillant beige',[[39,86,'504.752.51'],[39,106,'904.752.49'],[39,240,'704.752.50'],[62,80,'304.752.85'],[62,240,'904.752.54']]],
+      ['HAVSTORP','brun-beige',[[39,86,'605.683.96'],[39,106,'305.683.93'],[39,240,'105.683.94'],[62,80,'005.683.99'],[62,220,'405.683.97'],[62,240,'205.683.98']]],
+      ['HAVSTORP','gris clair',[[39,86,'705.684.66'],[39,106,'205.684.64'],[39,240,'905.684.65'],[62,80,'105.684.69'],[62,220,'505.684.67'],[62,240,'305.684.68']]],
+      ['HAVSTORP','vert profond',[[39,86,'205.683.60'],[39,106,'605.683.58'],[39,240,'405.683.59'],[62,80,'605.683.63'],[62,220,'005.683.61'],[62,240,'805.683.62']]],
+      ['KALLARP','brillant gris-vert foncé',[[39,86,'505.817.08'],[39,106,'905.817.06'],[39,240,'705.817.07'],[62,80,'905.817.11'],[62,220,'305.817.09'],[62,240,'105.817.10']]],
+      ['LERHYTTAN','bleu',[[39,86,'305.949.81'],[39,106,'905.949.78'],[39,240,'705.949.79'],[62,80,'705.949.84'],[62,220,'105.949.82'],[62,240,'905.949.83']]],
+      ['LERHYTTAN','gris clair',[[39,85,'103.523.51'],[39,105,'503.523.49'],[39,240,'303.523.50'],[62,80,'503.523.54'],[62,220,'903.523.52'],[62,240,'703.523.53']]],
+      ['LERHYTTAN','teinté noir',[[39,85,'303.560.46'],[39,105,'103.560.85'],[39,240,'503.560.45'],[62,80,'103.560.90'],[62,220,'103.560.47'],[62,240,'303.560.89']]],
+      ['NICKEBO','gris vert',[[39,86,'105.625.56'],[39,106,'905.625.57'],[39,240,'705.625.58'],[62,80,'505.625.59'],[62,220,'305.625.60'],[62,240,'105.625.61']]],
+      ['RINGHULT','gris clair brillant',[[39,86,'703.271.27'],[39,106,'103.271.25'],[39,240,'903.271.26'],[62,80,'103.271.30'],[62,220,'503.271.28'],[62,240,'303.271.29']]],
+      ['SINARP','brun',[[39,86,'004.041.43'],[39,106,'404.041.41'],[39,240,'204.041.42'],[62,80,'304.041.46'],[62,220,'804.041.44'],[62,240,'504.041.45']]],
+      ['SINARP','chêne',[[39,86,'305.951.60'],[39,106,'105.951.61'],[39,240,'905.951.62'],[62,80,'705.951.63'],[62,220,'505.951.64'],[62,240,'205.951.65']]],
+      ['STENSTA','brun foncé',[[39,80,'205.609.05'],[62,80,'005.609.06']]],
+      ['STENSUND','blanc',[[39,83,'904.505.45'],[39,103,'404.505.43'],[39,240,'204.505.44'],[62,80,'304.505.48'],[62,220,'704.505.46'],[62,240,'504.505.47']]],
+      ['TERRSJÖ','brun rouge',[[39,81,'506.057.28'],[39,101,'406.057.24'],[39,240,'906.057.26'],[62,80,'306.057.34']]],
+      ['UPPLÖV','mat beige foncé',[[39,83,'604.704.65'],[39,103,'104.704.63'],[39,240,'904.704.64'],[62,80,'004.704.68'],[62,220,'404.704.66'],[62,240,'204.704.67']]],
+      ['VALLSTENA','blanc',[[39,86,'405.965.88'],[39,106,'805.965.86'],[39,240,'605.965.87'],[62,80,'205.965.94'],[62,220,'805.965.91'],[62,240,'405.965.93']]],
+      ['VARSTA','acier inoxydable',[[39,80,'804.105.88'],[62,80,'604.105.89']]],
+      ['VOXTORP','beige clair brillant',[[39,86,'305.817.47'],[39,106,'705.817.45'],[39,240,'505.817.46'],[62,80,'705.817.50'],[62,220,'105.817.48'],[62,240,'905.817.49']]],
+      ['VOXTORP chêne','chêne',[[39,86,'105.591.15'],[39,106,'005.591.11'],[39,240,'605.591.13'],[62,80,'905.591.21'],[62,220,'705.591.17'],[62,240,'305.591.19']]]
+    ].map(([name,finish,formats],index)=>({id:String(index),name,finish,formats:formats.map(([w,l,ref])=>({w,l,ref}))}));
+    const optionHtml=ikeaCatalog.map(x=>`<option value="${x.id}">${x.name} — ${x.finish}</option>`).join('');
+    $('finishA').insertAdjacentHTML('beforeend',optionHtml);$('finishB').insertAdjacentHTML('beforeend',optionHtml);
+    const clone=$('calcTableA').cloneNode(true);clone.id='calcTableB';clone.querySelectorAll('[id]').forEach(el=>el.id+='B');clone.querySelectorAll('[for]').forEach(el=>el.htmlFor+='B');clone.querySelectorAll('[data-toggle]').forEach(el=>el.dataset.toggle+='B');$('calcTableB').replaceWith(clone);
+    const bindToggles=root=>root.querySelectorAll('[data-toggle]').forEach(cb=>cb.addEventListener('change',()=>{const input=$(cb.dataset.toggle);input.disabled=!cb.checked;if(cb.checked&&+input.value===0)input.value=1;if(!cb.checked)input.value=0}));bindToggles($('calcTableA'));bindToggles(clone);
+    $('useSecondFinish').addEventListener('change',e=>{$('finishBField').classList.toggle('hidden',!e.target.checked);$('finishBInputs').classList.toggle('hidden',!e.target.checked)});
+    const n=id=>Math.max(0,Number($(id)?.value)||0);
+    const q=id=>{const input=$(id);const cb=document.querySelector(`[data-toggle="${id}"]`);return cb?.checked?Math.floor(Math.max(0,Number(input.value)||0)):0};
+    const piece=(label,w,l,preferredWidth=62,priority=1,preferredLength=0)=>({label,w,l,preferredWidth,priority,preferredLength});
+    const repeat=(list,count,make)=>{for(let i=0;i<count;i++)list.push(make(i))};
+    const addLength=(list,id,label,depth)=>{let length=n(id);while(length>0){const cut=Math.min(240,length);list.push(piece(label,depth,cut,62,0));length-=cut}};
+    const checkedNumber=id=>document.querySelector(`[data-toggle="${id}"]`)?.checked?n(id):0;
+    function addDeveloped(list,id,label,height){
+      let total=checkedNumber(id);if(!total)return;
+      const widths=[];while(total>0.05){const width=Math.min(62,total);widths.push(Math.round(width*10)/10);total=Math.round((total-width)*10)/10}
+      const pairedAt80=Math.floor(widths.length/2)*2;
+      widths.forEach((width,i)=>{
+        const preferredWidth=width<=39?39:62;
+        if(height===248){list.push(piece(`${label} — base`,width,220,preferredWidth,0));list.push(piece(`${label} — rallonge`,width,28,preferredWidth,2));return}
+        const preferredLength=height===80?(i<pairedAt80?220:80):height<=220?220:240;
+        list.push(piece(label,width,height,preferredWidth,0,preferredLength));
+      });
+    }
+    const prune=rects=>rects.filter((a,i)=>a.w>0&&a.l>0&&!rects.some((b,j)=>i!==j&&a.x>=b.x&&a.y>=b.y&&a.x+a.w<=b.x+b.w&&a.y+a.l<=b.y+b.l));
+    function placeIn(bin,p){
+      let best=-1,score=Infinity;
+      bin.free.forEach((r,i)=>{if(p.w<=r.w&&p.l<=r.l){const s=r.w*r.l-p.w*p.l;if(s<score){score=s;best=i}}});
+      if(best<0)return false;
+      const r=bin.free.splice(best,1)[0];
+      bin.cuts.push({...p,x:r.x,y:r.y});
+      if(r.w>p.w)bin.free.push({x:r.x+p.w,y:r.y,w:r.w-p.w,l:p.l});
+      if(r.l>p.l)bin.free.push({x:r.x,y:r.y+p.l,w:r.w,l:r.l-p.l});
+      bin.free=prune(bin.free);return true;
+    }
+    function newPanelFor(p,catalog){
+      const fits=catalog.filter(x=>x.w>=p.w&&x.l>=p.l);
+      const exact=fits.filter(x=>x.w===p.preferredWidth&&(!p.preferredLength||x.l===p.preferredLength));
+      const preferred=fits.filter(x=>x.w===p.preferredWidth);
+      return (exact.length?exact:preferred.length?preferred:fits).sort((a,b)=>a.w*a.l-b.w*b.l)[0];
+    }
+    function pack(pieces,catalog){
+      const bins=[],unplaced=[];
+      pieces.sort((a,b)=>a.priority-b.priority||b.w-a.w||b.l-a.l);
+      pieces.forEach(p=>{
+        let candidates=bins.map((bin,i)=>({bin,i,fit:bin.free.some(r=>p.w<=r.w&&p.l<=r.l)})).filter(x=>x.fit).sort((a,b)=>{
+          const waste=bin=>Math.min(...bin.free.filter(r=>p.w<=r.w&&p.l<=r.l).map(r=>r.w*r.l-p.w*p.l));
+          return waste(a.bin)-waste(b.bin);
+        });
+        if(candidates.length){placeIn(candidates[0].bin,p);return}
+        const panel=newPanelFor(p,catalog);if(!panel){unplaced.push(p);return}
+        const bin={...panel,free:[{x:0,y:0,w:panel.w,l:panel.l}],cuts:[]};placeIn(bin,p);bins.push(bin);
+      });return {bins,unplaced};
+    }
+    function calculateFinish(suffix,finishId){
+      const selected=ikeaCatalog.find(x=>x.id===finishId);if(!selected)return {error:'Choisissez la finition.'};
+      const pieces=[],warnings=[];
+      const simple=[['fb80','Fileur bas 80',18,80,62],['fb88','Fileur bas 88',18,88,62],['fh40','Fileur haut 40',18,40,39],['fh60','Fileur haut 60',18,60,39],['fh80','Fileur haut 80',18,80,39],['fh100','Fileur haut 100',18,100,39],['fc220','Fileur colonne 220',18,220,62],['fc228','Fileur colonne 228',18,228,62],['fc240','Fileur colonne 240',18,240,62],['hl3986','Habillage latéral 39 × 86',39,86,39],['hl39106','Habillage latéral 39 × 106',39,106,39],['hl80','Habillage latéral 62 × 80',62,80,62],['hl220','Habillage latéral 62 × 220',62,220,62],['hl240','Habillage latéral 62 × 240',62,240,62],['j88','Jambage 62 × 88',62,88,62],['j228','Jambage 62 × 228',62,228,62]];
+      simple.forEach(([id,label,w,l,pw])=>repeat(pieces,q(id+suffix),()=>piece(label,w,l,pw,0)));
+      repeat(pieces,q('j248'+suffix),i=>piece(`Jambage 248 n°${i+1} — base`,62,220,62,0));
+      repeat(pieces,q('fc248'+suffix),i=>piece(`Fileur colonne 248 n°${i+1} — base`,18,220,62,0));
+      addLength(pieces,'under39'+suffix,'Sous meubles hauts, profondeur 39',39);addLength(pieces,'over39'+suffix,'Dessus meubles hauts, profondeur 39',39);addLength(pieces,'under60'+suffix,'Sous meubles, profondeur 60',60);addLength(pieces,'over60'+suffix,'Dessus meubles, profondeur 60',60);
+      addDeveloped(pieces,'rearBase80'+suffix,'Habillage arrière meubles bas, hauteur 80',80);addDeveloped(pieces,'rearBase88'+suffix,'Habillage arrière meubles bas, hauteur 88',88);
+      addDeveloped(pieces,'frontBase80'+suffix,'Habillage avant meubles bas, hauteur 80',80);addDeveloped(pieces,'frontBase88'+suffix,'Habillage avant meubles bas, hauteur 88',88);
+      addDeveloped(pieces,'rearCol220'+suffix,'Habillage arrière colonnes, hauteur 220',220);addDeveloped(pieces,'rearCol228'+suffix,'Habillage arrière colonnes, hauteur 228',228);addDeveloped(pieces,'rearCol240'+suffix,'Habillage arrière colonnes, hauteur 240',240);addDeveloped(pieces,'rearCol248'+suffix,'Habillage arrière colonnes, hauteur 248',248);
+      repeat(pieces,q('j248'+suffix),i=>piece(`Jambage 248 n°${i+1} — rallonge`,62,28,62,2));repeat(pieces,q('fc248'+suffix),i=>piece(`Fileur colonne 248 n°${i+1} — rallonge`,18,28,62,2));
+      if(q('fc248'+suffix))warnings.push('Les fileurs colonne de 248 cm sont calculés avec une base de 220 cm et une rallonge de 28 cm : valider la jonction et le sens du décor.');
+      if(!pieces.length)return {error:'Aucun élément sélectionné.'};
+      const {bins,unplaced}=pack(pieces,selected.formats),panels={};bins.forEach(b=>{const key=`${b.w} × ${b.l}|${b.ref}`;panels[key]=(panels[key]||0)+1});
+      const entries=Object.entries(panels);
+      const scraps=bins.flatMap((b,i)=>b.free.filter(r=>r.w>=18&&r.l>=20).map(r=>`Panneau ${i+1} (${b.w} × ${b.l}) : chute ${r.w} × ${r.l} cm`));
+      const describeCut=c=>c.label.startsWith('Fileur')?c.label:`${c.label} (${c.w} × ${c.l})`;
+      const plans=bins.map((b,i)=>`<li><b>Panneau ${i+1} — ${b.w} × ${b.l} cm, réf. ${b.ref} :</b> ${b.cuts.map(describeCut).join(' ; ')}</li>`).join('');
+      if(unplaced.length)warnings.push(`${unplaced.length} pièce(s) ne peuvent pas être réalisées avec les formats proposés pour cette finition : ${[...new Set(unplaced.map(x=>x.label))].join(', ')}.`);
+      return {count:bins.length,html:`<div class="finish-result"><h3>${selected.name} — ${selected.finish}</h3><div class="total">${bins.length} panneau${bins.length>1?'x':''} à prévoir</div><h4>Liste à commander</h4><ul>${entries.map(([k,v])=>{const [size,ref]=k.split('|');return `<li><b>${v} ×</b> panneau ${size} cm — réf. IKEA <b>${ref}</b></li>`}).join('')}</ul><h4>Plan de découpe proposé</h4><ul>${plans}</ul><h4>Chutes encore disponibles</h4>${scraps.length?`<ul>${scraps.map(x=>`<li>${x}</li>`).join('')}</ul>`:'<p>Aucune chute exploitable restante.</p>'}${warnings.length?`<div class="callout warning"><strong>À vérifier</strong>${warnings.join('<br>')}</div>`:''}</div>`};
+    }
+    $("calculate").onclick=()=>{
+      const results=[calculateFinish('',$('finishA').value)];if($('useSecondFinish').checked)results.push(calculateFinish('B',$('finishB').value));
+      const out=$("calcResult");out.classList.remove('hidden');if(results.some(x=>x.error)){out.innerHTML=`<div class="callout danger"><strong>Calcul impossible</strong>${results.filter(x=>x.error).map(x=>x.error).join('<br>')}</div>`;return}
+      const total=results.reduce((s,x)=>s+x.count,0);out.innerHTML=`<div class="total">${total} panneau${total>1?'x':''} au total</div>${results.map(x=>x.html).join('')}<p class="small">Catalogue IKEA Cuisine 2026. Les prix seront ajoutés après leur vérification automatique sur IKEA.fr. Contrôler la disponibilité, le sens du décor, les chants visibles, les jonctions, le trait de scie et les mesures réelles avant commande.</p>`;
+    };
+    $("resetCalc").onclick=()=>{document.querySelectorAll('#calpinage .calc-table input[type=checkbox]').forEach(x=>x.checked=false);document.querySelectorAll('#calpinage input[type=number]').forEach(x=>{x.value=0;if(x.classList.contains('qty'))x.disabled=true});$("calcResult").classList.add('hidden')};
+    $("printCalc").onclick=()=>window.print();
+  </script>
+</body>
+</html>
