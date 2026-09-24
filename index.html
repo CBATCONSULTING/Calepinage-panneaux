@@ -53,7 +53,7 @@
   <div id="app" class="hidden">
     <header><div class="topbar">
       <div class="brand"><div class="brand-mark">CB</div><div><div class="brand-title">Calepinage des panneaux</div><div class="brand-sub">Challenge Bat</div></div></div>
-      <div class="header-actions"><span class="version">V1.0.1</span><span id="userEmail" class="user-pill"></span><button id="logoutBtn" class="logout">Déconnexion</button></div>
+      <div class="header-actions"><span class="version">V1.0.2</span><span id="userEmail" class="user-pill"></span><button id="logoutBtn" class="logout">Déconnexion</button></div>
     </div></header>
 
     <div class="layout">
@@ -286,8 +286,20 @@
     };
     async function copyCalcResult(){
       const out=$("calcResult"),button=$("copyCalcResult");if(!out||!button)return;
-      const clone=out.cloneNode(true);clone.querySelector(".copy-result")?.remove();
-      const text=clone.innerText.replace(/\n{3,}/g,"\n\n").trim();
+      const lines=[],add=text=>{const clean=String(text||"").replace(/\s+/g," ").trim();if(clean)lines.push(clean)},blank=()=>{if(lines.length&&lines[lines.length-1]!=="")lines.push("")};
+      add(out.querySelector(":scope > .result-top .total")?.textContent);
+      out.querySelectorAll(":scope > .finish-result").forEach(block=>{
+        blank();add(block.querySelector(":scope > h3")?.textContent);add(block.querySelector(":scope > .total")?.textContent);
+        Array.from(block.children).forEach(el=>{
+          if(el.matches("h3,.total"))return;
+          if(el.matches("h4")){blank();add(el.textContent);return}
+          if(el.matches("ul")){el.querySelectorAll(":scope > li").forEach(li=>add("• "+li.textContent));return}
+          if(el.matches("p")){add(el.textContent);return}
+          if(el.matches(".callout")){blank();el.innerText.split(/\n+/).forEach(add)}
+        });
+      });
+      const note=out.querySelector(":scope > p.small");if(note){blank();add(note.textContent)}
+      const text=lines.join("\n").replace(/\n{3,}/g,"\n\n").trim();
       try{
         if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(text);
         else{const area=document.createElement("textarea");area.value=text;area.style.position="fixed";area.style.opacity="0";document.body.appendChild(area);area.select();document.execCommand("copy");area.remove()}
