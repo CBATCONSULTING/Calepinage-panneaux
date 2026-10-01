@@ -53,7 +53,7 @@
   <div id="app" class="hidden">
     <header><div class="topbar">
       <div class="brand"><div class="brand-mark">CB</div><div><div class="brand-title">Calepinage des panneaux</div><div class="brand-sub">Challenge Bat</div></div></div>
-      <div class="header-actions"><span class="version">V1.0.3</span><span id="userEmail" class="user-pill"></span><button id="logoutBtn" class="logout">Déconnexion</button></div>
+      <div class="header-actions"><span class="version">V1.0.4</span><span id="userEmail" class="user-pill"></span><button id="logoutBtn" class="logout">Déconnexion</button></div>
     </div></header>
 
     <div class="layout">
@@ -144,7 +144,7 @@
         </section>
         <div id="noResults" class="no-results hidden">Aucune rubrique ne correspond à cette recherche.</div>
       </main>
-    </div><div class="footer">Outil de calepinage Challenge Bat · Version 1.0.3 · Catalogue IKEA Cuisine 2026</div>
+    </div><div class="footer">Outil de calepinage Challenge Bat · Version 1.0.4 · Catalogue IKEA Cuisine 2026</div>
   </div>
 
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
@@ -262,7 +262,7 @@
     function calculateFinish(suffix,finishId){
       const selected=ikeaCatalog.find(x=>x.id===finishId);if(!selected)return {error:'Choisissez la finition.'};
       const pieces=[],warnings=[];
-      const simple=[['fb80','Fileur bas 80',18,80,62],['fb88','Fileur bas 88',18,88,62],['fh40','Fileur haut 40',18,40,39],['fh60','Fileur haut 60',18,60,39],['fh80','Fileur haut 80',18,80,39],['fh100','Fileur haut 100',18,100,39],['fc220','Fileur colonne 220',18,220,62],['fc228','Fileur colonne 228',18,228,62],['fc240','Fileur colonne 240',18,240,62],['hl3986','Habillage latéral 39 × 86',39,86,39],['hl39106','Habillage latéral 39 × 106',39,106,39],['hl80','Habillage latéral 62 × 80',62,80,62],['hl220','Habillage latéral 62 × 220',62,220,62],['hl240','Habillage latéral 62 × 240',62,240,62],['j88','Jambage 62 × 88',62,88,62],['j228','Jambage 62 × 228',62,228,62]];
+      const simple=[['fb80','Fileur bas 80',18,80,39],['fb88','Fileur bas 88',18,88,39],['fh40','Fileur haut 40',18,40,39],['fh60','Fileur haut 60',18,60,39],['fh80','Fileur haut 80',18,80,39],['fh100','Fileur haut 100',18,100,39],['fc220','Fileur colonne 220',18,220,62],['fc228','Fileur colonne 228',18,228,62],['fc240','Fileur colonne 240',18,240,62],['hl3986','Habillage latéral 39 × 86',39,86,39],['hl39106','Habillage latéral 39 × 106',39,106,39],['hl80','Habillage latéral 62 × 80',62,80,62],['hl220','Habillage latéral 62 × 220',62,220,62],['hl240','Habillage latéral 62 × 240',62,240,62],['j88','Jambage 62 × 88',62,88,62],['j228','Jambage 62 × 228',62,228,62]];
       simple.forEach(([id,label,w,l,pw])=>repeat(pieces,q(id+suffix),()=>piece(label,w,l,pw,0)));
       const angleSimple=[['fab80','Fileur d’angle bas 80',80],['fab88','Fileur d’angle bas 88',88],['fah40','Fileur d’angle haut 40',40],['fah60','Fileur d’angle haut 60',60],['fah80','Fileur d’angle haut 80',80],['fah100','Fileur d’angle haut 100',100],['fac220','Fileur d’angle colonne 220',220],['fac228','Fileur d’angle colonne 228',228],['fac240','Fileur d’angle colonne 240',240]];
       angleSimple.forEach(([id,label,l])=>repeat(pieces,q(id+suffix),()=>piece(`${label} — 2 planches`,36,l,l<=100?39:62,0,0,true)));
